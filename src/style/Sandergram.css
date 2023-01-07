@@ -1,0 +1,31 @@
+.main {
+  max-width: 640px;
+  margin: auto;
+}
+
+.query-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.results-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.help-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.separator {
+  height: 1px;
+  background-color: gray;
+}
+
+.result-group-title {
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 5px;
+  border-bottom: 1px solid grey;
+}

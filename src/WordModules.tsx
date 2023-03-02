@@ -9,6 +9,7 @@ import {
 import { CombatWordModule } from "./CombatWordModule"
 import { DisemvoweledWordModule } from "./DisemvoweledWordModule"
 import { OffByWordModule } from "./OffByWordModule"
+import { ContainsWordModule } from "./ContainsWordModule"
 import { AnagraphWordModule } from "./AnagraphWordModule"
 import WordLink from "./components/WordLink"
 
@@ -82,5 +83,6 @@ export const Modules = [
   new DisemvoweledWordModule(),
   new OffByWordModule(),
   new AnagraphWordModule(),
+  new ContainsWordModule(),
   new DefaultWordModule(),
 ]

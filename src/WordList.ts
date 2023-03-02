@@ -6,7 +6,6 @@ export class WordListEntry {
     this.normalized = WordList.normalize(this.raw)
     this.sorted = WordList.sortWord(this.normalized)
     this.extra = {}
-    //    this.anagraphed = Anagrapher.computeAnagraphed(this.normalized)
   }
 
   public raw: string = ""
@@ -15,7 +14,6 @@ export class WordListEntry {
   public normalized: string = ""
   public sorted: string = ""
   public extra: Record<string, any> = {}
-  //  public anagraphed: number[] | null = null
 }
 
 export class WordListEntryResult extends WordListEntry {
@@ -98,7 +96,7 @@ export class WordList {
     return word.split("").sort().join("")
   }
 
-  // Expets to be called on a normalize()d word
+  // Expects to be called on a normalize()d word
   public static disemvowel(word: string): string {
     return word.replace(/[AEIOU]*/g, "")
   }

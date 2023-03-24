@@ -11,6 +11,7 @@ import { DisemvoweledWordModule } from "./DisemvoweledWordModule"
 import { OffByWordModule } from "./OffByWordModule"
 import { ContainsWordModule } from "./ContainsWordModule"
 import { AnagraphWordModule } from "./AnagraphWordModule"
+import { AlternateDeletionWordModule } from "./AlternateDeletionWordModule"
 import WordLink from "./components/WordLink"
 
 class DefaultWordModule implements WordModule {
@@ -80,9 +81,10 @@ class DefaultWordModule implements WordModule {
 // DefaultWordModule should be last...
 export const Modules = [
   new CombatWordModule(),
-  new DisemvoweledWordModule(),
   new OffByWordModule(),
+  new AlternateDeletionWordModule(),
   new AnagraphWordModule(),
   new ContainsWordModule(),
+  new DisemvoweledWordModule(),
   new DefaultWordModule(),
 ]

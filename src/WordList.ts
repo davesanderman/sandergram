@@ -130,13 +130,11 @@ export class WordList {
   }  
 
   public getAnagrams(word: string): WordListEntry[] {
-    const ret: WordListEntry[] = []
     const prepped = WordList.prepForAnagram(word)
     return this._words.filter((wle) => wle.sorted === prepped)
   }
 
   public getDisemvoweledMatches(word: string): WordListEntry[] {
-    const ret: WordListEntry[] = []
     const prepped = WordList.disemvowel(WordList.normalize(word))
     return this.words.filter((wle) => wle.extra.disemvoweled === prepped)
   }

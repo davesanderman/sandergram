@@ -1,11 +1,4 @@
-import {
-  DisplayOnlyResult,
-  WordList,
-  WordListEntry,
-  WordListResult,
-  WordListResultGroup,
-  WordModule,
-} from "./WordList"
+import { DisplayOnlyResult, WordList, WordListEntry, WordListResultGroup, WordModule } from "./WordList"
 
 export class CombatWordModule implements WordModule {
   public getShortName() {
@@ -113,15 +106,6 @@ export class CombatWordModule implements WordModule {
     lose: number,
     draw: number,
   ): WordListEntry[] {
-    const fmt = new Intl.NumberFormat("default", {
-      style: "percent",
-      minimumFractionDigits: 3,
-      maximumFractionDigits: 3,
-    })
-    const fwin = fmt.format(win)
-    const flose = fmt.format(lose)
-    const fdraw = fmt.format(draw)
-    const ret: WordListEntry[] = []
     const sixes = wordList.words.filter((wle) => wle.upper.length === 6)
     const answers = sixes.filter((wle) => {
       const wld = this.findCombatWld(word, wle.upper)

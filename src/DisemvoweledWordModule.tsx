@@ -1,11 +1,4 @@
-import {
-  DisplayOnlyResult,
-  WordList,
-  WordListEntry,
-  WordListResult,
-  WordListResultGroup,
-  WordModule,
-} from "./WordList"
+import { WordList, WordListEntry, WordListResultGroup, WordModule } from "./WordList"
 
 export class DisemvoweledWordModule implements WordModule {
   public getShortName() {

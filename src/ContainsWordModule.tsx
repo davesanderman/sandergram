@@ -1,10 +1,4 @@
-import {
-  WordList,
-  WordListEntry,
-  WordListResult,
-  WordListResultGroup,
-  WordModule,
-} from "./WordList"
+import { WordList, WordListEntry, WordListResultGroup, WordModule } from "./WordList"
 
 export class ContainsWordModule implements WordModule {
   public getShortName() {
@@ -31,7 +25,7 @@ export class ContainsWordModule implements WordModule {
 
   public claimQuery(query: string): boolean {
     if (query.startsWith("&")) {
-      return true;
+      return true
     }
     return false
   }
@@ -39,7 +33,7 @@ export class ContainsWordModule implements WordModule {
   getContainsMatches(wordList: WordList, query: string): WordListEntry[] {
     const parts = query.split("&")
     if (parts.length !== 3) {
-        //$ TODO: <ErrorResult>
+      //$ TODO: <ErrorResult>
       return []
     }
     const count = parseInt(parts[1])

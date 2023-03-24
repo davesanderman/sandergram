@@ -13,7 +13,6 @@ export default function Sandergram() {
   const navigate = useNavigate()
   const query = useMemo(() => params["*"], [params])
   const [wordList, setWordList] = useState<WordList | null>(null)
-  const [curQuery, setCurQuery] = useState<string | null>(null)
   const [curResults, setCurResults] = useState<WordListResultGroup[] | null>(null)
 
   useEffect(() => {
@@ -41,7 +40,6 @@ export default function Sandergram() {
 
   useEffect(() => {
     if (wordList && query) {
-      console.log(`running queries for ${query}`)
       const results = wordList.runQuery(query, Modules)
       setCurResults(results)
     }

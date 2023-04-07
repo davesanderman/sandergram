@@ -11,6 +11,7 @@ import { DisemvoweledWordModule } from "./DisemvoweledWordModule"
 import { OffByWordModule } from "./OffByWordModule"
 import { ContainsWordModule } from "./ContainsWordModule"
 import { AnagraphWordModule } from "./AnagraphWordModule"
+import { CharRemovalWordModule } from "./CharRemovalWordModule"
 import { AlternateDeletionWordModule } from "./AlternateDeletionWordModule"
 import WordLink from "./components/WordLink"
 
@@ -84,6 +85,7 @@ export const Modules = [
   new OffByWordModule(),
   new AlternateDeletionWordModule(),
   new AnagraphWordModule(),
+  new CharRemovalWordModule(),
   new ContainsWordModule(),
   new DisemvoweledWordModule(),
   new DefaultWordModule(),

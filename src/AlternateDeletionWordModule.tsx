@@ -1,11 +1,8 @@
 import WordLink from "./components/WordLink"
+import { DisplayOnlyResult, WordListEntryResult, WordListResult, WordListResultGroup } from "./components/WordListResult"
 import {
-  DisplayOnlyResult,
-  WordList,
+    WordList,
   WordListEntry,
-  WordListEntryResult,
-  WordListResult,
-  WordListResultGroup,
   WordModule,
 } from "./WordList"
 

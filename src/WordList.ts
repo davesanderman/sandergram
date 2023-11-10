@@ -1,3 +1,5 @@
+import { WordListResultGroup } from "./components/WordListResult"
+
 export class WordListEntry {
   constructor(word: string) {
     this.raw = word.replace(/[-, ']/g, "")
@@ -14,30 +16,6 @@ export class WordListEntry {
   public normalized: string = ""
   public sorted: string = ""
   public extra: Record<string, any> = {}
-}
-
-export class WordListEntryResult extends WordListEntry {
-  constructor(wle: WordListEntry) {
-    super(wle.raw)
-  }
-
-  public displayText?: JSX.Element
-}
-
-export class DisplayOnlyResult extends WordListEntry {
-  constructor(displayText: JSX.Element) {
-    super("n/a")
-    this.displayText = displayText
-  }
-
-  public displayText?: JSX.Element
-}
-
-export type WordListResult = WordListEntryResult | DisplayOnlyResult
-
-export interface WordListResultGroup {
-  title: string
-  results: WordListResult[]
 }
 
 export interface WordModule {
@@ -127,7 +105,7 @@ export class WordList {
       }
     }
     return true
-  }  
+  }
 
   public getAnagrams(word: string): WordListEntry[] {
     const prepped = WordList.prepForAnagram(word)

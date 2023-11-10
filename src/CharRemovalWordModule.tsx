@@ -1,10 +1,9 @@
 import {
   WordList,
   WordListEntry,
-  WordListResult,
-  WordListResultGroup,
   WordModule,
 } from "./WordList"
+import { WordListResult, WordListResultGroup } from "./components/WordListResult"
 
 export class CharRemovalWordModule implements WordModule {
   public getShortName() {

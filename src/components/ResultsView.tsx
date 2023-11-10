@@ -1,5 +1,5 @@
-import { WordListResult, WordListResultGroup } from "../WordList"
 import WordLink from "./WordLink"
+import { WordListResult, WordListResultGroup } from "./WordListResult"
 
 export interface ResultsViewProps {
   results: WordListResultGroup[]
@@ -8,7 +8,7 @@ export interface ResultsViewProps {
 interface ResultProps {
   result: WordListResult
 }
-function Result({ result }: ResultProps) {
+export function Result({ result }: ResultProps) {
   const elem = result.displayText
   if (elem) {
     return elem

@@ -1,9 +1,6 @@
 import {
-  DisplayOnlyResult,
   WordList,
   WordListEntry,
-  WordListResult,
-  WordListResultGroup,
   WordModule,
 } from "./WordList"
 import { CombatWordModule } from "./CombatWordModule"
@@ -14,6 +11,9 @@ import { AnagraphWordModule } from "./AnagraphWordModule"
 import { CharRemovalWordModule } from "./CharRemovalWordModule"
 import { AlternateDeletionWordModule } from "./AlternateDeletionWordModule"
 import WordLink from "./components/WordLink"
+import { PatternWordModule } from "./PatternWordModule"
+import { LetterMoveWordModule } from "./LetterMoveWordModule"
+import { DisplayOnlyResult, WordListResult, WordListResultGroup } from "./components/WordListResult"
 
 class DefaultWordModule implements WordModule {
   public getShortName() {
@@ -83,6 +83,8 @@ class DefaultWordModule implements WordModule {
 export const Modules = [
   new CombatWordModule(),
   new OffByWordModule(),
+  new PatternWordModule(),
+  new LetterMoveWordModule(),
   new AlternateDeletionWordModule(),
   new AnagraphWordModule(),
   new CharRemovalWordModule(),

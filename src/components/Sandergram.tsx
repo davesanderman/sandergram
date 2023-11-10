@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { WORD_LIST_PATH } from "../Constants"
-import { WordList, WordListResultGroup } from "../WordList"
+import { WordList } from "../WordList"
 import { Modules } from "../WordModules"
 import "../style/Sandergram.css"
 import QueryForm from "./QueryForm"
 import Help from "./Help"
 import ResultsView from "./ResultsView"
+import { WordListResultGroup } from "./WordListResult"
 
 export default function Sandergram() {
   const params = useParams()

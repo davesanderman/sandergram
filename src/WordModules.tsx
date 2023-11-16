@@ -3,16 +3,16 @@ import {
   WordListEntry,
   WordModule,
 } from "./WordList"
-import { CombatWordModule } from "./CombatWordModule"
-import { DisemvoweledWordModule } from "./DisemvoweledWordModule"
-import { OffByWordModule } from "./OffByWordModule"
-import { ContainsWordModule } from "./ContainsWordModule"
-import { AnagraphWordModule } from "./AnagraphWordModule"
-import { CharRemovalWordModule } from "./CharRemovalWordModule"
-import { AlternateDeletionWordModule } from "./AlternateDeletionWordModule"
+import { CombatWordModule } from "./modules/CombatWordModule"
+import { DisemvoweledWordModule } from "./modules/DisemvoweledWordModule"
+import { OffByWordModule } from "./modules/OffByWordModule"
+import { ContainsWordModule } from "./modules/ContainsWordModule"
+import { AnagraphWordModule } from "./modules/AnagraphWordModule"
+import { CharRemovalWordModule } from "./modules/CharRemovalWordModule"
+import { AlternateDeletionWordModule } from "./modules/AlternateDeletionWordModule"
 import WordLink from "./components/WordLink"
-import { PatternWordModule } from "./PatternWordModule"
-import { LetterMoveWordModule } from "./LetterMoveWordModule"
+import { PatternWordModule } from "./modules/PatternWordModule"
+import { LetterMoveWordModule } from "./modules/LetterMoveWordModule"
 import { DisplayOnlyResult, WordListResult, WordListResultGroup } from "./components/WordListResult"
 
 class DefaultWordModule implements WordModule {

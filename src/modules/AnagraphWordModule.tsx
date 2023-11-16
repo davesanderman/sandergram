@@ -2,8 +2,8 @@ import {
   WordList,
   WordListEntry,
   WordModule,
-} from "./WordList"
-import { WordListResult, WordListResultGroup } from "./components/WordListResult"
+} from "../WordList"
+import { WordListResult, WordListResultGroup } from "../components/WordListResult"
 
 export class AnagraphWordModule implements WordModule {
   public getShortName() {

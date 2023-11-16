@@ -1,5 +1,5 @@
-import { WordList, WordListEntry, WordModule } from "./WordList"
-import { DisplayOnlyResult, WordListListResult, WordListResult, WordListResultGroup } from "./components/WordListResult"
+import { WordList, WordListEntry, WordModule } from "../WordList"
+import { DisplayOnlyResult, WordListListResult, WordListResult, WordListResultGroup } from "../components/WordListResult"
 
 //$ TODO: Extend to chains instead of just pairs
 

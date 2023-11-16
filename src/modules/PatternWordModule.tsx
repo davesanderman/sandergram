@@ -1,11 +1,11 @@
-import { UPPERCASE_ALPHABET } from "./Constants"
-import { WordList, WordListEntry, WordModule } from "./WordList"
+import { UPPERCASE_ALPHABET } from "../Constants"
+import { WordList, WordListEntry, WordModule } from "../WordList"
 import {
   DisplayOnlyResult,
   WordListEntryResult,
   WordListResult,
   WordListResultGroup,
-} from "./components/WordListResult"
+} from "../components/WordListResult"
 
 export class PatternWordModule implements WordModule {
   public getShortName() {

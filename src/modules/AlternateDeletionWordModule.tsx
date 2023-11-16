@@ -1,10 +1,10 @@
-import WordLink from "./components/WordLink"
-import { DisplayOnlyResult, WordListEntryResult, WordListResult, WordListResultGroup } from "./components/WordListResult"
+import WordLink from "../components/WordLink"
+import { DisplayOnlyResult, WordListEntryResult, WordListResult, WordListResultGroup } from "../components/WordListResult"
 import {
     WordList,
   WordListEntry,
   WordModule,
-} from "./WordList"
+} from "../WordList"
 
 export class AlternateDeletionWordModule implements WordModule {
   public getShortName() {

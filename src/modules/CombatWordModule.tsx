@@ -1,5 +1,5 @@
-import { WordList, WordListEntry, WordModule } from "./WordList"
-import { DisplayOnlyResult, WordListResultGroup } from "./components/WordListResult"
+import { WordList, WordListEntry, WordModule } from "../WordList"
+import { DisplayOnlyResult, WordListResultGroup } from "../components/WordListResult"
 
 export class CombatWordModule implements WordModule {
   public getShortName() {

@@ -57,6 +57,10 @@ export class WordList {
     })
   }
 
+  public findWord(word: string): WordListEntry | undefined {
+    return this.words.find((wle) => wle.normalized === word);
+  }
+
   //$ TODO: Make this be a culture-invariant uppercasing?
   public static normalize(word: string): string {
     return word.toUpperCase()
